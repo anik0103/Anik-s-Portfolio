@@ -1,14 +1,14 @@
 function Projects() {
   const projects = [
     {
-      title: 'E-Commerce Website',
-      description: 'A full-featured online shopping platform with cart functionality and payment integration.',
-      tech: ['React', 'Tailwind CSS', 'Node.js'],
+      title: 'Nare & Dear:E-Commerce Website',
+      description: 'A full-featured online cake shopping platform with cart functionality and payment integration.',
+      tech: ['HTML', 'CSS', 'js'],
     },
     {
-      title: 'Task Manager App',
-      description: 'A productivity application for managing daily tasks with drag-and-drop functionality.',
-      tech: ['React', 'Redux', 'Firebase'],
+      title: 'Anthena Inventory: An Inventory Management System',
+      description: 'A productivity application for managing inventory with features like stock tracking, order management, and reporting.',
+      tech: ['React', 'Tailwind CSS', 'Js'],
     },
     {
       title: 'Portfolio Website',

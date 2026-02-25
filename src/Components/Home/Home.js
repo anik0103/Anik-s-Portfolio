@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Anik from "../../Assest/Anikpic.jpeg";
+import Anik from "../../Assest/Anik.png";
 
 function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -39,7 +39,7 @@ function Home() {
             <img
               src={Anik}
               alt="Profile"
-              className="w-full h-full object-cover"
+              className="w-full h-fit object-cover"
             />
           </div>
         </div>
