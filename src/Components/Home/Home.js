@@ -29,7 +29,7 @@ function Home() {
       <div className="absolute top-1/2 left-20 w-2 h-2 bg-[#C4B5FD] rounded-full opacity-40 animate-pulse"></div>
       <div className="absolute bottom-1/2 right-40 w-4 h-4 bg-[#A78BFA] rounded-full opacity-20 animate-pulse"></div>
       <div
-        className="relative z-10 flex flex-col md:flex-row items-center justify-center min-h-screen px-4 gap-20"
+        className="relative z-10 flex flex-col md:flex-row items-center justify-center min-h-screen px-4 gap-20 pt-24 md:pt-0"
         style={{
           transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
         }}
@@ -71,12 +71,21 @@ function Home() {
               </span>
             </div>
           </div>
-          <a
-            href="/projects"
-            className="bg-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
-          >
-            View My Work
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a
+              href="/projects"
+              className="bg-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
+            >
+              View My Work
+            </a>
+              <a
+              href="/Anik-resume.pdf"
+              download="Anik-Resume.pdf"
+              className="bg-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-transparent hover:border-white/50 flex items-center gap-2"
+            >
+              📄 Download Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>
