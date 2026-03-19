@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className="bg-[#C4B5FD] py-4 shadow-md">
+        <nav className="bg-[#7F00FF] py-4 shadow-md">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex justify-between items-center">
               {/* Logo or empty for center align simulation */}

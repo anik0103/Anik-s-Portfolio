@@ -1,87 +1,97 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const projectsData = [
   {
-    title: 'Nare & Dear: E-Commerce Website',
-    description: 'A full-featured online cake shopping platform with cart functionality, payment integration, and responsive design for seamless user experience.',
-    image: '/images/near.png',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    demoLink: 'https://sabbir45ali.github.io/near---dear-cake-shop/',
-    githubLink: 'https://github.com/Sabbir45ali/near---dear-cake-shop',
+    title: "Nare & Dear: E-Commerce Website",
+    description:
+      "A full-featured online cake shopping platform with cart functionality, payment integration, and responsive design for seamless user experience.",
+    image: "/images/near.png",
+    tech: ["HTML", "CSS", "JavaScript"],
+    demoLink: "https://sabbir45ali.github.io/near---dear-cake-shop/",
+    githubLink: "https://github.com/Sabbir45ali/near---dear-cake-shop",
     features: [
-      'Shopping cart management',
-      'Payment gateway integration',
-      'Responsive design',
-      'Product catalog'
-    ]
+      "Shopping cart management",
+      "Payment gateway integration",
+      "Responsive design",
+      "Product catalog",
+    ],
   },
   {
-    title: 'Athena Inventory: Inventory Management System',
-    description: 'Comprehensive inventory management application featuring stock tracking, order processing, and advanced reporting tools for businesses.',
-    image: '/images/athena.png',
-    tech: ['React', 'Tailwind CSS', 'JavaScript'],
-    demoLink: 'https://athena-inventory.vercel.app',
-    githubLink: 'https://athenainventory.netlify.app/',
+    title: "Athena Inventory: Inventory Management System",
+    description:
+      "Comprehensive inventory management application featuring stock tracking, order processing, and advanced reporting tools for businesses.",
+    image: "/images/athena.png",
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+    demoLink: "https://athena-inventory.vercel.app",
+    githubLink: "https://athenainventory.netlify.app/",
     features: [
-      'Real-time stock tracking',
-      'Order management',
-      'Reporting dashboard',
-      'User authentication'
-    ]
+      "Real-time stock tracking",
+      "Order management",
+      "Reporting dashboard",
+      "User authentication",
+    ],
   },
   {
-    title: 'Portfolio Website',
-    description: 'Modern personal portfolio website highlighting projects, skills, and professional experience with smooth animations and responsive layout.',
-    image: '/images/Anikpic.jpeg',
-    tech: ['React', 'Tailwind CSS', 'Vercel'],
-    demoLink: 'https://yourportfolio.vercel.app',
-    githubLink: 'https://github.com/yourusername/portfolio',
+    title: "Portfolio Website",
+    description:
+      "Modern personal portfolio website highlighting projects, skills, and professional experience with smooth animations and responsive layout.",
+    image: "/images/Anikpic.jpeg",
+    tech: ["React", "Tailwind CSS", "Vercel"],
+    demoLink: "https://yourportfolio.vercel.app",
+    githubLink: "https://github.com/yourusername/portfolio",
     features: [
-      'React Router navigation',
-      'Tailwind responsive design',
-      'Smooth animations',
-      'SEO optimized'
-    ]
+      "React Router navigation",
+      "Tailwind responsive design",
+      "Smooth animations",
+      "SEO optimized",
+    ],
   },
   {
-    title: 'Weather Dashboard',
-    description: 'Interactive real-time weather application providing location-based forecasts, current conditions, and interactive maps powered by OpenWeather API.',
-    image: '/images/1.svg',
-    tech: ['JavaScript', 'OpenWeather API', 'CSS3'],
-    demoLink: 'https://weather-dashboard.vercel.app',
-    githubLink: 'https://github.com/yourusername/weather-dashboard',
+    title: "Weather Dashboard",
+    description:
+      "Interactive real-time weather application providing location-based forecasts, current conditions, and interactive maps powered by OpenWeather API.",
+    image: "/images/1.svg",
+    tech: ["JavaScript", "OpenWeather API", "CSS3"],
+    demoLink: "https://weather-dashboard.vercel.app",
+    githubLink: "https://github.com/yourusername/weather-dashboard",
     features: [
-      'Real-time weather data',
-      'Geolocation support',
-      'Interactive maps',
-      'Forecast charts'
-    ]
-  }
+      "Real-time weather data",
+      "Geolocation support",
+      "Interactive maps",
+      "Forecast charts",
+    ],
+  },
 ];
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState("all");
 
-  const filteredProjects = filter === 'all' 
-    ? projectsData 
-    : projectsData.filter(project => project.tech.some(t => t.toLowerCase().includes(filter.toLowerCase())));
+  const filteredProjects =
+    filter === "all"
+      ? projectsData
+      : projectsData.filter((project) =>
+          project.tech.some((t) =>
+            t.toLowerCase().includes(filter.toLowerCase()),
+          ),
+        );
 
   const openModal = (project) => setSelectedProject(project);
   const closeModal = () => setSelectedProject(null);
 
-  const techFilters = ['all', 'React', 'JavaScript', 'HTML', 'CSS'];
+  const techFilters = ["all", "React", "JavaScript", "HTML", "CSS"];
 
   return (
     <>
-      <section className="min-h-screen bg-gradient-to-br from-[#FEFCE8] to-[#FFF7ED] py-20 px-4">
+      <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-[#A855F7] mb-2 after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-24 after:h-1 after:bg-gradient-to-r after:from-[#7C3AED] after:to-[#A855F7] after:rounded-full">
+            <h2 className="text-5xl md:text-6xl font-bold text-[#7F00FF] pt-8 mb-2 yafter:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-24 after:h-1 after:bg-gradient-to-r after:from-[#7C3AED] after:to-[#A855F7] after:rounded-full">
               My Projects
             </h2>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-              Explore my diverse portfolio of web applications built with modern technologies
+            <p className="text-xl text-gray-100 max-w-2xl mx-auto">
+              Explore my diverse portfolio of web applications built with modern
+              technologies
             </p>
           </div>
 
@@ -93,8 +103,8 @@ const Projects = () => {
                 onClick={() => setFilter(tech)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
                   filter === tech
-                    ? 'bg-gradient-to-r from-[#7C3AED] to-[#A855F7] text-white shadow-lg shadow-purple-500/25'
-                    : 'bg-white/70 backdrop-blur-sm text-gray-800 border border-gray-200 hover:shadow-md'
+                    ? "bg-gradient-to-r from-[#7C3AED] to-[#A855F7] text-white shadow-lg shadow-purple-500/25"
+                    : "bg-white/70 backdrop-blur-sm text-gray-800 border border-gray-200 hover:shadow-md"
                 }`}
               >
                 {tech}
@@ -107,7 +117,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <div
                 key={project.title}
-                className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-white/50 hover:border-purple-200"
+                className="group bg-transparent backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-2 border-white hover:border-purple-200"
               >
                 <div className="relative overflow-hidden h-64">
                   <img
@@ -119,11 +129,13 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#7C3AED] transition-colors">
+                  <h3 className="text-2xl font-bold text-[#7F00FF] mb-4 group-hover:text-[#7C3AED] transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{project.description}</p>
-                  
+                  <p className="text-white mb-6 leading-relaxed">
+                    {project.description}
+                  </p>
+
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tech.map((t) => (
                       <span
@@ -158,7 +170,9 @@ const Projects = () => {
 
           {filteredProjects.length === 0 && (
             <div className="col-span-full text-center py-20">
-              <p className="text-2xl text-gray-500">No projects match this filter</p>
+              <p className="text-2xl text-gray-500">
+                No projects match this filter
+              </p>
             </div>
           )}
         </div>
@@ -166,11 +180,11 @@ const Projects = () => {
 
       {/* Project Modal */}
       {selectedProject && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex items-center justify-center p-4"
           onClick={closeModal}
         >
-          <div 
+          <div
             className="bg-white/90 backdrop-blur-xl rounded-3xl max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl w-full mx-4"
             onClick={(e) => e.stopPropagation()}
           >
@@ -186,7 +200,7 @@ const Projects = () => {
                   ×
                 </button>
               </div>
-              
+
               <div className="grid md:grid-cols-2 gap-12 items-start">
                 <div>
                   <img
@@ -195,13 +209,15 @@ const Projects = () => {
                     alt={selectedProject.title}
                   />
                 </div>
-                
+
                 <div>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                     {selectedProject.description}
                   </p>
-                  
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Features</h4>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">
+                    Features
+                  </h4>
                   <ul className="space-y-2 mb-8">
                     {selectedProject.features.map((feature, i) => (
                       <li key={i} className="flex items-center text-gray-700">
@@ -235,11 +251,8 @@ const Projects = () => {
           </div>
         </div>
       )}
-
-
     </>
   );
 };
 
 export default Projects;
-

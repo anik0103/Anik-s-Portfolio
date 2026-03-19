@@ -1,27 +1,45 @@
 function Contact() {
   return (
-    <section className="min-h-screen bg-[#FEFCE8] py-16 px-4">
+    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900] py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-[#7C3AED] text-center mb-8">Get In Touch</h2>
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <p className="text-lg text-gray-700 text-center mb-8">
-            Feel free to reach out if you have any questions or want to collaborate on a project!
+        <h2 className="text-4xl font-bold text-[#7C3AED] text-center mb-8">
+          Get In Touch
+        </h2>
+        <div className="bg-transparent rounded-2xl shadow-2xl p-8">
+          <p className="text-lg text-gray-100 text-center mb-8">
+            Feel free to reach out if you have any questions or want to
+            collaborate on a project!
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-6">
-            <a href="mailto:adhikaryanik70@gmail.com?subject=Contact Inquiry&body=Hello, I want to ask about..." target="_blank" className="bg-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#A78BFA] transition-colors duration-300 text-center">
+            <a
+              href="mailto:adhikaryanik70@gmail.com?subject=Contact Inquiry&body=Hello, I want to ask about..."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#7F00FF] border-4 border-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#A78BFA] transition-colors duration-300 text-center"
+            >
               Email Me
             </a>
-            <a href="https://github.com/anik0103" target="_blank" rel="Github" className="border-2 border-[#C4B5FD] text-[#7C3AED] px-8 py-3 rounded-full font-semibold hover:bg-[#C4B5FD] hover:text-white transition-colors duration-300 text-center">
+            <a
+              href="https://github.com/anik0103"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" bg-[#7F00FF] border-4 border-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#C4B5FD] hover:text-white transition-colors duration-300 text-center"
+            >
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/anik-adhikary-6b1969238/" target="_blank" rel="noopener noreferrer" className="border-2 border-[#C4B5FD] text-[#7C3AED] px-8 py-3 rounded-full font-semibold hover:bg-[#C4B5FD] hover:text-white transition-colors duration-300 text-center">
+            <a
+              href="https://www.linkedin.com/in/anik-adhikary-6b1969238/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" bg-[#7F00FF] border-4 border-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#C4B5FD] hover:text-white transition-colors duration-300 text-center"
+            >
               LinkedIn
             </a>
           </div>
         </div>
-        <footer className="text-center mt-16 text-gray-600">
+        {/* <footer className="text-center mt-16 text-gray-600">
           <p>© 2024 Frontend Developer Portfolio. All rights reserved.</p>
-        </footer>
+        </footer> */}
       </div>
     </section>
   );

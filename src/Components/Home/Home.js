@@ -17,17 +17,7 @@ function Home() {
   }, []);
 
   return (
-    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-[#FEFCE8] via-[#F5F0FF] to-[#FEFCE8]">
-      <div className="absolute top-20 left-10 w-64 h-64 bg-[#C4B5FD] opacity-20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#A78BFA] opacity-15 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute top-32 right-32 w-4 h-4 bg-[#C4B5FD] rounded-full opacity-40 animate-pulse"></div>
-      <div className="absolute bottom-40 left-20 w-3 h-3 bg-[#A78BFA] rounded-full opacity-30 animate-pulse"></div>
-      <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-[#7C3AED] rounded-full opacity-50 animate-pulse"></div>
-      <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-[#C4B5FD] rounded-full opacity-40 animate-pulse"></div>
-      <div className="absolute top-1/3 left-10 w-2 h-2 bg-[#A78BFA] rounded-full opacity-50 animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-20 w-3 h-3 bg-[#7C3AED] rounded-full opacity-30 animate-pulse"></div>
-      <div className="absolute top-1/2 left-20 w-2 h-2 bg-[#C4B5FD] rounded-full opacity-40 animate-pulse"></div>
-      <div className="absolute bottom-1/2 right-40 w-4 h-4 bg-[#A78BFA] rounded-full opacity-20 animate-pulse"></div>
+    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900]">
       <div
         className="relative z-10 flex flex-col md:flex-row items-center justify-center min-h-screen px-4 gap-20 pt-24 md:pt-0"
         style={{
@@ -44,14 +34,18 @@ function Home() {
           </div>
         </div>
         <div className="text-center md:text-left">
-          <h1 className="text-5xl md:text-6xl font-bold text-[#7C3AED] mb-4">
-            Hi, I'm a Frontend Developer
+          <h1 className="text-5xl md:text-6xl font-bold text-[#7F00FF] mb-4">
+            <span className="text-white">Hi</span>, I'm a{" "}
+            <span className="text-white">Frontend</span> Developer
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-2xl">
-            I build beautiful, responsive, and user-friendly web applications
+
+          <p className="text-xl md:text-2xl text-[#7F00FF] mb-4 max-w-2xl">
+            I build <span className="text-white">beautiful</span>,{" "}
+            <span className="text-white">responsive</span>, and{" "}
+            <span className="text-white">user-friendly</span> web applications
           </p>
           <div className="mb-8 max-w-2xl">
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-100 mb-4">
               A passionate frontend developer with expertise in React,
               JavaScript, and modern web technologies. I create seamless user
               experiences with clean code and creative solutions.
@@ -74,14 +68,14 @@ function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="/projects"
-              className="bg-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
+              className="bg-[#7F00FF] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
             >
               View My Work
             </a>
-              <a
+            <a
               href="/Anik-resume.pdf"
               download="Anik-Resume.pdf"
-              className="bg-[#C4B5FD] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-transparent hover:border-white/50 flex items-center gap-2"
+              className="bg-[#7F00FF] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-transparent hover:border-white/50 flex items-center gap-2"
             >
               📄 Download Resume
             </a>
