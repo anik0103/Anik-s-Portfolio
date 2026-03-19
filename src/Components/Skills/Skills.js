@@ -11,9 +11,9 @@ function Skills() {
   const categories = ["Frontend", "Tools"];
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-[#FEFCE8] to-[#FFFBEB] py-16 px-4">
+    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900] py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold bg-gradient-to-r from-[#7C3AED] to-[#C4B5FD] bg-clip-text text-transparent text-center mb-20">
+        <h2 className="text-5xl font-bold bg-gradient-to-r from-[#7F00FF] to-[#C4B5FD] bg-clip-text text-transparent text-center mb-20 pb-6">
           My Skills
         </h2>
 
@@ -25,14 +25,14 @@ function Skills() {
 
           return (
             <div key={category} className="mb-16">
-              <h3 className="text-3xl font-bold text-[#7C3AED] mb-8 text-center">
+              <h3 className="text-3xl font-bold text-white mb-8 text-center">
                 {category}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {catSkills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 hover:-translate-y-2 border border-white/50"
+                    className="group bg-white backdrop-blur-sm rounded-2xl shadow-xl p-8 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 hover:-translate-y-2 border border-white/50"
                   >
                     <div className="flex items-center mb-4">
                       <div className="text-4xl mr-4 group-hover:animate-bounce">
@@ -40,10 +40,10 @@ function Skills() {
                       </div>
                       <div className="flex-1">
                         <div className="flex justify-between items-baseline">
-                          <h4 className="text-xl font-bold text-gray-800 group-hover:text-[#7C3AED] transition-colors">
+                          <h4 className="text-xl font-bold text-[#7F00FF] group-hover:text-[#7C3AED] transition-colors">
                             {skill.name}
                           </h4>
-                          <span className="text-[#C4B5FD] font-bold text-lg">
+                          <span className="text-[#7F00FF] font-bold text-lg">
                             {skill.level}%
                           </span>
                         </div>
