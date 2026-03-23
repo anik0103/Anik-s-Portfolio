@@ -13,7 +13,7 @@ function Skills() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900] py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold bg-gradient-to-r from-[#7F00FF] to-[#C4B5FD] bg-clip-text text-transparent text-center mb-20 pb-6">
+        <h2 className="text-5xl font-bold bg-gradient-to-r from-[#7C3AED] to-[#C4B5FD] bg-clip-text text-transparent text-center mb-20 pb-6">
           My Skills
         </h2>
 
