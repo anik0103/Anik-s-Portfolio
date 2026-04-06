@@ -67,7 +67,7 @@ function Home() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/projects"
+              href="https://anik-portfolio-app.netlify.app/projects"
               className="bg-[#7F00FF] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
             >
               View My Work
