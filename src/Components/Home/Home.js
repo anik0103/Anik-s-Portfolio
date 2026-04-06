@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Anik from "../../Assest/Anik.png";
-
+import { Link } from 'react-router-dom';
 function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -66,19 +66,18 @@ function Home() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a
-              href="/projects"
+            <Link
+              to="/projects"
               className="bg-[#7F00FF] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
             >
               View My Work
-            </a>
-            <a
-              href="/Anik-resume.pdf"
-              download="Anik-Resume.pdf"
+            </Link>
+            <Link
+              to="/contact"
               className="bg-[#7F00FF] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-transparent hover:border-white/50 flex items-center gap-2"
             >
               📄 Download Resume
-            </a>
+            </Link>
           </div>
         </div>
       </div>
