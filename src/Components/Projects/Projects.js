@@ -36,9 +36,9 @@ const projectsData = [
     description:
       "Modern personal portfolio website highlighting projects, skills, and professional experience with smooth animations and responsive layout.",
     image: "/images/portfolio.png",
-    tech: ["React", "Tailwind CSS", "Vercel"],
-    demoLink: "https://yourportfolio.vercel.app",
-    githubLink: "https://github.com/yourusername/portfolio",
+    tech: ["React", "Tailwind CSS", "js"],
+    demoLink: "https://anik-portfolio-app.netlify.app/",
+    githubLink: "https://github.com/anik0103/Anik-s-Portfolio",
     features: [
       "React Router navigation",
       "Tailwind responsive design",
