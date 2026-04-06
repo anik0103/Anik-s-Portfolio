@@ -22,8 +22,8 @@ const projectsData = [
       "Comprehensive inventory management application featuring stock tracking, order processing, and advanced reporting tools for businesses.",
     image: "/images/athena.png",
     tech: ["React", "Tailwind CSS", "JavaScript"],
-    demoLink: "https://athena-inventory.vercel.app",
-    githubLink: "https://athenainventory.netlify.app/",
+    demoLink: "https://athenainventory.netlify.app/",
+    githubLink: "https://github.com/anik0103/inventory-management-system",
     features: [
       "Real-time stock tracking",
       "Order management",
@@ -35,7 +35,7 @@ const projectsData = [
     title: "Portfolio Website",
     description:
       "Modern personal portfolio website highlighting projects, skills, and professional experience with smooth animations and responsive layout.",
-    image: "/images/Anikpic.jpeg",
+    image: "/images/portfolio.png",
     tech: ["React", "Tailwind CSS", "Vercel"],
     demoLink: "https://yourportfolio.vercel.app",
     githubLink: "https://github.com/yourusername/portfolio",
@@ -46,21 +46,21 @@ const projectsData = [
       "SEO optimized",
     ],
   },
-  {
-    title: "Weather Dashboard",
-    description:
-      "Interactive real-time weather application providing location-based forecasts, current conditions, and interactive maps powered by OpenWeather API.",
-    image: "/images/1.svg",
-    tech: ["JavaScript", "OpenWeather API", "CSS3"],
-    demoLink: "https://weather-dashboard.vercel.app",
-    githubLink: "https://github.com/yourusername/weather-dashboard",
-    features: [
-      "Real-time weather data",
-      "Geolocation support",
-      "Interactive maps",
-      "Forecast charts",
-    ],
-  },
+  // {
+  //   title: "Weather Dashboard",
+  //   description:
+  //     "Interactive real-time weather application providing location-based forecasts, current conditions, and interactive maps powered by OpenWeather API.",
+  //   image: "/images/1.svg",
+  //   tech: ["JavaScript", "OpenWeather API", "CSS3"],
+  //   demoLink: "https://weather-dashboard.vercel.app",
+  //   githubLink: "https://github.com/yourusername/weather-dashboard",
+  //   features: [
+  //     "Real-time weather data",
+  //     "Geolocation support",
+  //     "Interactive maps",
+  //     "Forecast charts",
+  //   ],
+  // },
 ];
 
 const Projects = () => {
