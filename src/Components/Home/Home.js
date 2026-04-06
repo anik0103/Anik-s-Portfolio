@@ -72,12 +72,13 @@ function Home() {
             >
               View My Work
             </Link>
-            <Link
-              to="/contact"
+            <a
+              href="/Anik-resume.pdf"
+              download="Anik-Resume.pdf"
               className="bg-[#7F00FF] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#A78BFA] transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-transparent hover:border-white/50 flex items-center gap-2"
             >
               📄 Download Resume
-            </Link>
+            </a>
           </div>
         </div>
       </div>
